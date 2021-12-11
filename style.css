@@ -8,16 +8,27 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 h1 {
   font-size: 2.6rem;
 }
 
 h2 {
   font-size: 4.8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 h3 {
   font-size: 3rem;
+  font-weight: normal;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 h4,
@@ -26,7 +37,7 @@ h5 {
 }
 
 li,
-button,
+.transparent,
 label,
 input,
 p {
@@ -34,13 +45,13 @@ p {
 }
 
 a {
-  color: white;
+  color: aliceblue;
   text-decoration: none;
 }
 
 .main-head {
-  background: #131c27;
-  color: white;
+  background: #292b2b;
+  color: aliceblue;
 }
 
 nav {
@@ -49,18 +60,69 @@ nav {
   display: flex;
   width: 90%;
   margin: auto;
+  flex-wrap: wrap;
 }
 
 #logo {
-  flex: 2 1 40rem;
-  display: flex;
+  flex: 2 1 30rem;
   align-items: center;
   font-family: "Pattaya", sans-serif;
+  font-weight: normal;
 }
 .main-options {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1 1 30rem;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.intro {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url(/img/header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.transparent {
+  display: inline-block;
+  padding: 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  text-decoration: none;
+  line-height: 120%;
+  background-color: rgba(255, 255, 255, 0);
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  border-radius: 0.4rem;
+  -webkit-transition: background-color 300ms ease;
+  -moz-transition: background-color 300ms ease;
+  transition: background-color 300ms ease;
+  cursor: pointer;
+}
+.transparent:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+@media screen and (max-width: 932px) {
+  .main-options {
+    text-align: center;
+  }
+  #logo {
+    padding: 1rem;
+    text-align: center;
+  }
+  html {
+    font-size: 45%;
+  }
 }
