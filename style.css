@@ -204,15 +204,15 @@ nav {
 
 .card {
   flex: 1 1 25rem;
-  min-height: 60vh;
+  min-height: 55vh;
   margin: 2rem 5rem;
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
+
 .card img {
   max-width: 15%;
   margin: 2rem;
-  -webkit-filter: invert(100%);
 }
 
 .card h4,
@@ -220,7 +220,94 @@ nav {
   padding: 1rem;
 }
 .card-icon {
+  background: #c7cece;
+}
+
+/*CONTACT SECTION*/
+
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/footer.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wrapper {
+  background: rgba(20, 22, 22, 0.7);
+  min-width: 30%;
+  border-radius: 10px;
+  color: aliceblue;
+}
+
+.form-wrapper label {
+  margin-right: 2rem;
+}
+
+.form-head {
+  text-align: center;
+  padding: 2rem;
+}
+
+.name-form,
+.email-form {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-wrapper button {
+  width: 100%;
+  margin-top: 2rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  color: aliceblue;
+}
+
+.form-wrapper input {
+  border-radius: 10px;
+  background: aliceblue;
+  padding: 1rem;
+  border: none;
+}
+
+/*FOOTER*/
+
+footer {
+  color: aliceblue;
   background: #292b2b;
+  text-align: center;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 10vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 40rem;
+  color: black;
+  padding-bottom: 2rem;
+}
+
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper img {
+  height: 5rem;
 }
 
 /* MEDIA QUERY*/
