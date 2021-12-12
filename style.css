@@ -18,17 +18,11 @@ h1 {
 
 h2 {
   font-size: 4.8rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 h3 {
   font-size: 3rem;
   font-weight: normal;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
 }
 
 h4,
@@ -90,7 +84,18 @@ nav {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-family: "Poppins", sans-serif;
+}
+
+.intro h2 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.intro h3 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .transparent {
@@ -114,6 +119,63 @@ nav {
   color: #fff;
 }
 
+/*CITIES SECTION*/
+
+#cities {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url(/img/body.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  color: aliceblue;
+  position: relative;
+  overflow: hidden;
+}
+
+.cities-head {
+  width: 90%;
+  margin: auto;
+}
+
+.cities-head h2 {
+  color: #1d1f1f;
+  padding: 2rem 0rem;
+  text-decoration: underline;
+}
+
+.cities-head h3 {
+  padding: 4rem 0rem;
+}
+
+.moving-cloud-2 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 50rem;
+  animation: cloudAnimation 3s infinite alternate ease-in-out;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* MEDIA QUERY*/
+
 @media screen and (max-width: 932px) {
   .main-options {
     text-align: center;
@@ -124,5 +186,8 @@ nav {
   }
   html {
     font-size: 45%;
+  }
+  .cities-head h3 {
+    background: rgb(41, 43, 43, 0.6);
   }
 }
