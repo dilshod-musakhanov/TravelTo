@@ -46,6 +46,9 @@ a {
 .main-head {
   background: #292b2b;
   color: aliceblue;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
 }
 
 nav {
@@ -69,6 +72,11 @@ nav {
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+.main-options li:hover {
+  border-style: solid;
+  padding: 0 1rem;
 }
 
 .intro {
@@ -292,6 +300,7 @@ footer {
   min-height: 10vh;
   flex-wrap: wrap;
 }
+
 footer h5 {
   flex: 1 1 40rem;
   color: black;
@@ -307,7 +316,7 @@ footer ul {
 }
 
 .footer-wrapper img {
-  height: 5rem;
+  height: 3rem;
 }
 
 /* MEDIA QUERY*/
